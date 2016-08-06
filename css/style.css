@@ -67,6 +67,7 @@ header a {
 
 header li {
     display: inline-block;
+    background-color: black;
 }
 #sect_0 {
     height: 500px;
@@ -147,8 +148,7 @@ button a {
     height: 350px;
 }
 
-.three_boxes {
-    height: 250px;
+.three_boxes .mett {
     width: 1028px;
     margin-top: 25px;
     margin-left: 80px;
@@ -159,11 +159,13 @@ button a {
     width: 30%;
     float:left;
     vertical-align: top;
+    margin-top: 25px;
     margin-left: 23px;
     position:relative;
 }
 
-.box:not(.b3){
+
+.box.b1, .box.b2 {
    height: 225px; 
 }
 
@@ -198,7 +200,7 @@ button a {
     border-right: 6px solid transparent;
     border-left: 6px solid transparent;
     border-bottom: 6px solid #24ba9f!IMPORTANT;
-    height: 3027;
+    height: 27px;
     width: 160px;
    position:absolute;
     margin: 10px;
@@ -220,4 +222,250 @@ button a {
     height: 60px;
     width: 100%;
     position:absolute;
+}
+
+section.two {
+    background-color: rgb(220, 220, 220);
+}
+
+.sect_2 {
+    height:725px;
+    position: relative;
+}
+
+.title_medium {
+    display: block;
+    font-size: 20px;
+    line-height: 25px;
+    vertical-align: middle;
+    border-top: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-bottom: 6px solid #24ba9f!IMPORTANT;
+    width: 320px;
+   position:absolute;
+    margin: 10px;
+    
+}
+
+.bb1, .bb2, .bb3 {
+    border: 1px solid lightgrey;
+    height: 500px;
+    background-color: rgb(240, 240, 240);
+    margin-top: 60px;
+    border-radius: 2px;
+}
+
+.circle {
+    border: 1px solid lightgrey;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    top: -20px;
+    left: 50%;
+    margin-left: -25px;
+    line-height: 20px;
+}
+
+.circle:hover {
+    background-color: #24ba9f;
+}
+
+.dot {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: lightgrey;
+    margin-top: 11px;
+    margin-left: 11px;
+    
+}
+
+.dot:hover {
+    background-color: #fff;
+}
+
+.circle_inside {
+    background-color: white;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 115px;
+    border-color: lightgrey;
+    position:relative;
+    
+}
+
+.bb1 h4 {
+    color: #24ba9f;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+p.price {
+    color: grey;
+    display:inline;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    line-height: 36px;
+    position:absolute;
+}
+
+p.small {
+    margin-top: 22px;
+    margin-left: 76px;
+}
+
+p.big {
+    font-size:33px;
+    
+}
+
+.left {
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+p.right {
+    margin-top: 30px;
+    margin-left: 56px;
+}
+
+p.pln {
+    margin-left: 30px;
+    margin-top: 50px;  
+}
+
+.mett li {
+    list-style: none;
+    text-align: center;
+    color: grey;
+    font-size: 16px;
+    line-height: 46px;
+    width: 100%;
+    display: block;
+    
+}
+
+.stripe_inside li:first-child {
+    margin-top: 20px;
+}
+
+.stripe_inside li:nth-child(2n+1) {
+    background-color: rgb(220, 220, 220);
+}
+
+.stripe_inside li:nth-child(2n+1):hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.stripe_inside li:nth-child(2n+2) {
+    background-color: rgb(230, 230, 230);
+}
+
+.stripe_inside li:nth-child:hover (2n+2) {
+    background-color: rgb(230, 230, 230);
+}
+
+button.m1 {
+    height: 35px;
+    width: 120px;
+    margin-left: 120px;
+    margin-top: 105px;
+    background-color: #24ba9f;
+    border-radius: 10px;
+}
+
+button.m1:hover {
+    background-color: white;
+}
+
+.bb1 a {
+    color: white;
+    line-height: 32px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.bb1 a:hover {
+    color: #24ba9f;
+}
+
+p.left {
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+p.right {
+    margin-top: 30px;
+    margin-left: 56px;
+}
+
+p.left2 {
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+p.right2 {
+    margin-top: 30px;
+    margin-left: 56px;
+}
+
+button.m2 {
+    height: 35px;
+    width: 120px;
+    margin-left: 120px;
+    margin-top: 58px;
+    background-color: #24ba9f;
+    border-radius: 10px;
+}
+
+button.m2:hover {
+    background-color: white;
+}
+
+p.leftleft {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+p.left3 {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+p.right3 {
+    margin-top: 30px;
+    margin-left: 61px;
+}
+
+p.small3 {
+    margin-top: 22px;
+    margin-left: 81px;
+}
+
+
+button.m3 {
+    margin-top:10px;
+     height: 35px;
+    width: 120px;
+    margin-left: 120px;
+    background-color: #24ba9f;
+    border-radius: 10px;
+}
+
+button.m3:hover {
+    background-color: white;
+}
+
+div.bb1:hover {
+    background-color: #24ba9f;
 }
