@@ -1,0 +1,151 @@
+
+.container {
+    width: 1054px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000;
+    height: 40px;
+    line-height: 40px;
+}
+
+header, header a {
+    color: #fff;
+}
+
+header .logo {
+    float: left;
+    width: 30%;
+}
+
+header nav {
+    float: right;
+    width: 70%;
+}
+
+header .main_nav {
+    text-align: right;
+}
+
+header .main_nav>li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    border: 1px solid green;
+}
+
+header li:hover>ul {
+    display: block;
+}
+
+header .main_nav ul {
+    position: absolute;
+    border: 1px solid red;
+    top: 20px; /* pozycja dla drugiego ul*/
+    left: 0;
+    right: 0;
+}
+
+header .sub_nav {
+    display: none;
+}
+
+header .sub_nav li {
+    background: #000;
+}
+
+header .sub_nav li:first-child {
+    background-color: transparent;
+    
+}
+
+header .sub_nav .triangle {
+    border: 15px solid #000;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+#slides .item {
+    height: 500px;
+    border: 1px solid blue;
+}
+
+#slides .list {
+    position: relative;
+}
+
+#slides div[class^="arrow"] {
+    position: absolute;
+    top: 40%;
+    font-size: 30px;
+    font-weight: bold;
+    display: none;
+}
+
+#slides:hover div[class^="arrow"] {
+    display: block;
+}
+
+#slides .arrow_left {
+    left: 0;
+}
+
+#slides .arrow_right {
+    right: 0;
+}
+
+#gallery .item {
+    float: left;
+    width: 32%;
+    margin-left: 2%;
+    border: 1px solid orange;
+    height: 225px;
+    background-color: beige;
+    position: relative;
+    
+}
+
+#gallery .item:first-child{
+    margin-left: 0;
+}
+
+#gallery .desc {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 12px;
+    height: 60px;
+    line-height: 60px;
+    background-color: pink;
+}
+
+#gallery .full {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255, 0.5);
+    display: none;
+}
+
+#gallery .item:hover .full {
+    display: block;
+}
+
+h3.header {
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+h3.header span {
+    width: 315px;
+    border-bottom: 7px solid rgb(37,199,176);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
