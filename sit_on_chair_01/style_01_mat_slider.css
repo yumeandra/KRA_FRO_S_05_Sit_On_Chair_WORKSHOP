@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'ralewayregular';
-    src: url('fonts/Raleway-Regular webfontkit/raleway-regular-webfont.woff2') format('woff2'),
-         url('fonts/Raleway-Regular webfontkit/raleway-regular-webfont.woff') format('woff');
+    src: local('ralewayregular'), url('../fonts/Raleway-Regular webfontkit/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular webfontkit/raleway-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -11,17 +11,19 @@
 
 @font-face {
     font-family: 'ralewaybold';
-    src: url('fonts/Raleway-Bold webfontkit/raleway-bold-webfont.woff2') format('woff2'),
-         url('fonts/Raleway-Bold webfontkit/raleway-bold-webfont.woff') format('woff');
+    src: url('../fonts/Raleway-Bold webfontkit/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Bold webfontkit/raleway-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
+/*
 * {
     border: 1px solid red!important;
     
 }
+*/
 
 body {
     font-family: "ralewayregular", sans-serif;
@@ -79,15 +81,15 @@ span {
     background-size: auto 100%;
     background-position: center;
 }
-
-.hidden {
-    visibility:hidden;
-}
-
 .visible{
     visibility:visible;
     display:block;
 }
+.hidden {
+    visibility:hidden;
+}
+
+
 
 .hidden_menu {
     float: right;
@@ -97,6 +99,7 @@ span {
 }
 
 .hidden_menu div{
+    content: "";
     width: 0;
     height: 0;
     margin-left: 40%;
@@ -121,7 +124,21 @@ span {
 }
 
 
-img {
+.slider ul{
+    list-style: none;
+}
+
+.slider li{
+    display: none;
+    
+}
+
+.slider .visible{
+    display: inline-block;
+}
+
+.slider {
+    height: 400px;
     float:left;
     width: 50%;
     margin-top: 50px;
@@ -134,6 +151,7 @@ img {
     margin-bottom: 50px;
    
 }
+
 
 .fa-chevron-right {
     float: right;
@@ -232,6 +250,10 @@ button a {
     margin-top: 145px;
     position:absolute;
     background-color: rgba(255, 255, 255, .3)
+}
+
+.stripe_transparent:hover {
+    visibility: hidden;
 }
 
 .title_small {
@@ -626,15 +648,15 @@ footer .bottom_stripe {
 }
 
 .media {
-    list-style: none;
-    float: right:
+    float: right;
 }
 
 .media>li {
     height:37px;
     width: 165px;
     margin-left: 20px;
-    float: right;
+    float: left;
+    list-style: none;
     
 }
 
@@ -643,7 +665,7 @@ footer .bottom_stripe {
 }
 .social_media>li {
     list-style: none;
-    float: right;
+    float: left;
     margin-left: 2px;
     height: 35px;
     width: 35px;

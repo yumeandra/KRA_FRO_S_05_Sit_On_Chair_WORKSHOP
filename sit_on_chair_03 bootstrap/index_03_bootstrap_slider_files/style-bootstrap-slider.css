@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'ralewayregular';
-    src: url('fonts/Raleway-Regular webfontkit/raleway-regular-webfont.woff2') format('woff2'),
+    src: local('ralewayregular'), url('fonts/Raleway-Regular webfontkit/raleway-regular-webfont.woff2') format('woff2'),
          url('fonts/Raleway-Regular webfontkit/raleway-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -79,15 +79,15 @@ span {
     background-size: auto 100%;
     background-position: center;
 }
-
-.hidden {
-    visibility:hidden;
-}
-
 .visible{
     visibility:visible;
     display:block;
 }
+.hidden {
+    visibility:hidden;
+}
+
+
 
 .hidden_menu {
     float: right;
@@ -97,6 +97,7 @@ span {
 }
 
 .hidden_menu div{
+    content: "";
     width: 0;
     height: 0;
     margin-left: 40%;
@@ -119,21 +120,47 @@ span {
     font-size: 10px;
     
 }
-
-
-img {
-    float:left;
-    width: 50%;
+.sect_0 div.bx-wrapper {
+    width: 45%;
+    height: 479px;
+    margin-left: 60px;
     margin-top: 50px;
 }
 
+img {
+    float:left;
+    width: 100%;
+/*    margin-top: 50px;*/
+}
+
+.display_none{
+    display: none;
+}
+
+.display_block{
+    display:block;
+}
+
+.bx-pager{
+    float: right;
+}
+.bx-pager-item {
+    display: inline-block;
+    display: none;
+    
+}
+
+.bx-controls-direction {
+    float:right;
+}
 .wide_stripe {
     width: 450px;
     display: inline-block;
     position:relative;
-    margin-bottom: 50px;
+/*    margin-bottom: 50px;*/
    
 }
+
 
 .fa-chevron-right {
     float: right;
@@ -232,6 +259,10 @@ button a {
     margin-top: 145px;
     position:absolute;
     background-color: rgba(255, 255, 255, .3)
+}
+
+.stripe_transparent:hover {
+    visibility: hidden;
 }
 
 .title_small {
